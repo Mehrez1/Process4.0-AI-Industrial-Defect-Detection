@@ -1,0 +1,19 @@
+<!-- Barre de navigation -->
+<nav style="background-color: #043c6c; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+  <!-- Image à gauche -->
+  <img src="../assets/FUBA.png" alt="Logo" style="width: 200px; height: 80px;" />
+
+  <!-- Liens de navigation centrés -->
+  <div style="display: flex; gap: 15px; margin: 0 auto;">
+    <a routerLink="/" style="color: white; font-size: 1.5rem; text-decoration: none;">Accueil</a>
+    <a routerLink="/classification" style="color: white; font-size: 1.5rem; text-decoration: none;">Classification</a>
+    <a routerLink="/classification" style="color: white; font-size: 1.5rem; text-decoration: none;">Détails sur les défauts</a>
+
+  </div>
+
+  <!-- Espace vide à droite pour équilibrer -->
+  <div style="width: 200px;"></div>
+</nav>
+
+<!-- Contenu de la route active -->
+<router-outlet></router-outlet>

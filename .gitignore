@@ -1,8 +1,23 @@
+
+# Python
+venv/
+venv310/
 __pycache__/
 *.pyc
-venv/
-.ipynb_checkpoints/
-*.pt
+
+# Modèles entraînés (trop volumineux)
+*.keras
 *.h5
+*.pt
 *.pth
-runs/
+
+# Angular / Node
+node_modules/
+.angular/
+dist/
+
+# Dataset
+dataset/
+
+# Divers
+.vscode/

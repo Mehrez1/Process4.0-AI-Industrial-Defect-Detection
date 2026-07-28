@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Classification de carte électronique</h2>
+
+  <!-- Champ de fichier personnalisé -->
+  <div class="custom-file-upload">
+    <input type="file" (change)="onFileSelected($event)" />
+    <button [class.file-selected]="fileSelected">Choisir un fichier</button>
+  </div>
+
+  <!-- Conteneur pour les boutons -->
+  <div style="margin-top: 30px;">
+    <!-- Bouton Prédire -->
+    <button id="predictButton" [class.active]="fileSelected" (click)="onPredict()">Prédire</button>
+  </div>
+
+  <!-- Résultat -->
+  <div *ngIf="result">
+    <p>Résultat : <strong>{{ result }}</strong></p>
+  </div>
+</div>
